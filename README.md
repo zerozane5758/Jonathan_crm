@@ -1,9 +1,10 @@
 Flow Aplikasi:
 1. Buat database dengan nama jonathan_crm.
-2. Gunakan password PostgreSQL: postgres.
-3. Lakukan migrasi tabel menggunakan Laravel.
-4. Jalankan seeder untuk data pengguna dan produk.
-5. Jalankan perintah php artisan serve dan npm run dev, kemudian akses aplikasi di endpoint /login.
+2. Gunakan password dan username PostgreSQL: postgres.
+4. Lakukan composer install dan configurasi file .env
+5. Lakukan migrasi tabel menggunakan Laravel.
+6. Jalankan seeder untuk data pengguna dan produk.
+7. Jalankan perintah php artisan serve dan npm run dev, kemudian akses aplikasi di endpoint /login.
 
 Asumsi Role Pengguna:
 Terdapat dua jenis role dalam sistem:
@@ -44,7 +45,7 @@ Jadwal pengerjaan project:
   15.00-16.00 (penambahan middleware untuk role admin dan manager)
   20.00-21.00 (perbaikan middleware dan tampilan untuk masing” role)
 - Rabu, 23 April 2025
-  21.00-22.00 (pembuatan workflow dan github repository)
+  21.00-22.30 (pembuatan workflow dan github repository)
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
