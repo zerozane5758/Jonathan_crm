@@ -1,3 +1,50 @@
+Flow Aplikasi:
+1. Buat database dengan nama jonathan_crm.
+2. Gunakan password PostgreSQL: postgres.
+3. Lakukan migrasi tabel menggunakan Laravel.
+4. Jalankan seeder untuk data pengguna dan produk.
+5. Jalankan perintah php artisan serve dan npm run dev, kemudian akses aplikasi di endpoint /login.
+
+Asumsi Role Pengguna:
+Terdapat dua jenis role dalam sistem:
+- Admin: dapat mengakses semua halaman kecuali halaman Project.
+- Manager: dapat mengakses seluruh halaman, termasuk halaman Project.
+
+Workflow Login:
+- Admin:
+  Email: admin@example.com
+  Password: admin
+  
+- Manager:
+  Email: manager@example.com
+  Password: manager
+
+Pengguna dapat melakukan login dengan kredensial di atas. Saat melakukan signup, role default yang diberikan adalah admin.
+
+Fitur Berdasarkan Role:
+Admin:
+- Dapat mengakses halaman Lead untuk menambahkan calon pelanggan dan memilih produk terkait.
+- Dapat melakukan edit dan delete pada data calon pelanggan.
+- Dapat mengakses halaman Product untuk melihat, membuat, mengedit, dan menghapus data produk     (terdapat 3 produk awal dari seeder).
+- Dapat mengakses halaman Customer untuk melihat daftar pelanggan yang telah di-approve oleh      manager.
+
+Manager:
+- Memiliki seluruh akses yang dimiliki oleh admin.
+- Dapat mengakses halaman Project untuk melihat data calon pelanggan dengan status pending.
+- Di halaman Project, manager dapat melakukan approval terhadap data calon pelanggan.
+- Setelah disetujui, data calon pelanggan akan muncul di halaman Customer.
+
+Jadwal pengerjaan project:
+- senin, 21 April 2025:
+  10.30-13.00 (pengerjaan database dan tampilan)
+  19.30-22.00 (pengerjaan semua fitur yang ada)
+- Selasa, 22 April 2025
+  15.00-16.00 (penambahan middleware untuk role admin dan manager)
+  20.00-21.00 (perbaikan middleware dan tampilan untuk masing” role)
+- Rabu, 23 April 2025
+  21.00-22.00 (pembuatan workflow dan github repository)
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
