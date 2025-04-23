@@ -13,10 +13,12 @@ Terdapat dua jenis role dalam sistem:
 Workflow Login:
 - Admin:
   Email: admin@example.com
+  
   Password: admin
   
 - Manager:
   Email: manager@example.com
+  
   Password: manager
 
 Pengguna dapat melakukan login dengan kredensial di atas. Saat melakukan signup, role default yang diberikan adalah admin.
